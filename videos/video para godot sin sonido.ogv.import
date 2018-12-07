@@ -1,0 +1,14 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/video para godot sin sonido.ogv-025d561ca65e280a97ad537d6ca655e4.ogvstr"
+
+[deps]
+
+source_file="res://videos/video para godot sin sonido.ogv"
+dest_files=[ "res://.import/video para godot sin sonido.ogv-025d561ca65e280a97ad537d6ca655e4.ogvstr" ]
+
+[params]
+
+loop=true

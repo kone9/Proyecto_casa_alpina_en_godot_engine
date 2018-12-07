@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/color blanco.png-9ac8caa010e7076ccafe711cfdbb4f2b.s3tc.stex"
+path.etc2="res://.import/color blanco.png-9ac8caa010e7076ccafe711cfdbb4f2b.etc2.stex"
+
+[deps]
+
+source_file="res://Casa_alpina/images/color blanco.png"
+dest_files=[ "res://.import/color blanco.png-9ac8caa010e7076ccafe711cfdbb4f2b.s3tc.stex", "res://.import/color blanco.png-9ac8caa010e7076ccafe711cfdbb4f2b.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=1
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

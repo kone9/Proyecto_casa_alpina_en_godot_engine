@@ -1,0 +1,14 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/reel_tateto_mas_mas_video_big_banny0001-15976.ogv-fdb4f66278f275b1b18dcb5edfbbad53.ogvstr"
+
+[deps]
+
+source_file="res://videos/reel_tateto_mas_mas_video_big_banny0001-15976.ogv"
+dest_files=[ "res://.import/reel_tateto_mas_mas_video_big_banny0001-15976.ogv-fdb4f66278f275b1b18dcb5edfbbad53.ogvstr" ]
+
+[params]
+
+loop=true

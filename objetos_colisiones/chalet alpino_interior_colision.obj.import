@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/chalet alpino_interior_colision.obj-ff50ca841ce11d884c7a5165d31f83bc.mesh"
+
+[deps]
+
+files=[ "res://.import/chalet alpino_interior_colision.obj-ff50ca841ce11d884c7a5165d31f83bc.mesh" ]
+
+source_file="res://objetos_colisiones/chalet alpino_interior_colision.obj"
+dest_files=[ "res://.import/chalet alpino_interior_colision.obj-ff50ca841ce11d884c7a5165d31f83bc.mesh", "res://.import/chalet alpino_interior_colision.obj-ff50ca841ce11d884c7a5165d31f83bc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

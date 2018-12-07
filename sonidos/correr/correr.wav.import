@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/correr.wav-96b46948d4ce7a88e4cd8d88f57f21e7.sample"
+
+[deps]
+
+source_file="res://sonidos/correr/correr.wav"
+dest_files=[ "res://.import/correr.wav-96b46948d4ce7a88e4cd8d88f57f21e7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

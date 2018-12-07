@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://codigos/script_global_sonido_tv.gd" type="Script" id=1]
+[ext_resource path="res://videos/video para godot.ogv" type="VideoStream" id=2]
+
+[node name="dentro_de_viewport" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="video_prueba" type="VideoPlayer" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1029.0
+margin_bottom = 605.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+audio_track = 0
+stream = ExtResource( 2 )
+volume_db = 0.0
+autoplay = false
+paused = false
+expand = true
+buffering_msec = 500
+bus = "Efecto_sonido"
+_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Material", "Mouse", "Pause", "Rect", "Size Flags", "Theme", "Visibility" ]
+
+

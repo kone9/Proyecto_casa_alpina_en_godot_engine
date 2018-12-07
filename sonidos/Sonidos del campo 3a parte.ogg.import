@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sonidos del campo 3a parte.ogg-6ddd5556da7ba96f32ea0559951958f9.oggstr"
+
+[deps]
+
+source_file="res://sonidos/Sonidos del campo 3a parte.ogg"
+dest_files=[ "res://.import/Sonidos del campo 3a parte.ogg-6ddd5556da7ba96f32ea0559951958f9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

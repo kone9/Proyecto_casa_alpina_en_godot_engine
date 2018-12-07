@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Casa_alpina/canilla_cosina.dae" type="PackedScene" id=1]
+[ext_resource path="res://codigos/canilla.gd" type="Script" id=2]
+
+[node name="canilla" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+
+

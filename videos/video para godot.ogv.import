@@ -1,0 +1,14 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/video para godot.ogv-cc121bd31ddf206f6d517d9dd24ec27f.ogvstr"
+
+[deps]
+
+source_file="res://videos/video para godot.ogv"
+dest_files=[ "res://.import/video para godot.ogv-cc121bd31ddf206f6d517d9dd24ec27f.ogvstr" ]
+
+[params]
+
+loop=true

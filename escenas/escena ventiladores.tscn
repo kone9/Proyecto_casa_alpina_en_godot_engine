@@ -1,0 +1,133 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Casa_alpina/ventiladores.dae" type="PackedScene" id=1]
+[ext_resource path="res://codigos/escena ventiladores.gd" type="Script" id=2]
+[ext_resource path="res://animaciones/animacion ventilador cocina.tres" type="Animation" id=3]
+[ext_resource path="res://animaciones/Animacion ventilador sala.tres" type="Animation" id=4]
+
+[node name="Scene Root" index="0" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="rigging ventilador cocina" parent="." index="0"]
+
+transform = Transform( 12.225, 0, 37.7622, 0, 39.6917, 0, -37.7622, 0, 12.225, -71.8027, 252.061, -200.042 )
+
+[node name="Skeleton" parent="rigging ventilador cocina" index="0"]
+
+_sections_unfolded = [ "Transform", "Visibility", "bones" ]
+
+[node name="SpotLight" type="SpotLight" parent="rigging ventilador cocina/Skeleton/ventilador cocina" index="0"]
+
+transform = Transform( 0.950133, -0.311766, -0.00694019, 0.00333428, -0.0120976, 0.999922, -0.311826, -0.950081, -0.0104548, -9.53674e-07, -1.36849, -2.38419e-07 )
+visible = false
+layers = 1
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 0.3
+light_indirect_energy = 1.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.15
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+spot_range = 6000.0
+spot_attenuation = 1.0
+spot_angle = 75.0
+spot_angle_attenuation = 1.0
+_sections_unfolded = [ "Light", "Shadow", "Spot" ]
+
+[node name="rigging ventilador sala" parent="." index="1"]
+
+transform = Transform( 12.225, 0, 37.7622, 0, 39.6917, 0, -37.7622, 0, 12.225, 130.416, 256.671, 181.617 )
+
+[node name="ventilador sala" parent="rigging ventilador sala/Skeleton" index="0"]
+
+transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0 )
+
+[node name="SpotLight" type="SpotLight" parent="rigging ventilador sala/Skeleton/ventilador sala" index="0"]
+
+transform = Transform( 0.310359, 0.950611, -0.00364488, 0.00342475, 0.00271606, 0.999992, 0.950613, -0.310369, -0.0024127, 0.000832081, -1.38532, 0.00257015 )
+visible = false
+layers = 1
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 0.3
+light_indirect_energy = 1.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.15
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+spot_range = 6000.0
+spot_attenuation = 1.0
+spot_angle = 75.0
+spot_angle_attenuation = 1.0
+_sections_unfolded = [ "Light", "Spot" ]
+
+[node name="AnimationPlayer" parent="." index="2"]
+
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="Camera" type="Camera" parent="." index="3"]
+
+transform = Transform( 0.198959, -0.744713, 0.637038, -0.0558876, 0.640353, 0.766044, -0.978413, -0.188014, 0.0857838, 300.672, 420.994, 112.002 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 1000.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimationTreePlayer" type="AnimationTreePlayer" parent="." index="4"]
+
+playback_process_mode = 1
+master_player = NodePath("")
+base_path = NodePath("..")
+active = false
+data = {
+"active": false,
+"connections": [ "animacion ventilador cocina", "mix", 0, "animacion ventilador sala", "mix", 1, "mix", "out", 0 ],
+"master": NodePath(""),
+"nodes": [ {
+"id": "mix",
+"mix": 1.0,
+"position": Vector2( 561, 92 ),
+"type": "mix"
+}, {
+"id": "out",
+"position": Vector2( 737, 55 ),
+"type": "output"
+}, {
+"animation": ExtResource( 3 ),
+"filter": [  ],
+"id": "animacion ventilador cocina",
+"position": Vector2( 186, 78 ),
+"type": "animation"
+}, {
+"animation": ExtResource( 4 ),
+"filter": [  ],
+"id": "animacion ventilador sala",
+"position": Vector2( 186, 213 ),
+"type": "animation"
+} ]
+}
+_sections_unfolded = [ "Playback" ]
+
+

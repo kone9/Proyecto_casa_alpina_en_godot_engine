@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pl_tile4.wav-59b85934de9ff8aa8f888fabbef9c191.sample"
+
+[deps]
+
+source_file="res://sonidos/correr/pl_tile4.wav"
+dest_files=[ "res://.import/pl_tile4.wav-59b85934de9ff8aa8f888fabbef9c191.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

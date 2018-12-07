@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/doormove10.wav-250e59b8bc9b185b055f3c4db0b0bb22.sample"
+
+[deps]
+
+source_file="res://sonidos/doormove10.wav"
+dest_files=[ "res://.import/doormove10.wav-250e59b8bc9b185b055f3c4db0b0bb22.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

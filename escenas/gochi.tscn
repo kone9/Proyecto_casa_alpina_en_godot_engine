@@ -1,0 +1,121 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Personajes importados/gochi/gochi_para_godot.dae" type="PackedScene" id=1]
+[ext_resource path="res://codigos/gochi.gd" type="Script" id=2]
+[ext_resource path="res://Personajes importados/gochi/animaciones/estatica.tres" type="Animation" id=3]
+[ext_resource path="res://Personajes importados/gochi/animaciones/Caminata.tres" type="Animation" id=4]
+[ext_resource path="res://Personajes importados/gochi/animaciones/Mensaje.tres" type="Animation" id=5]
+[ext_resource path="res://Personajes importados/gochi/animaciones/No_quiero.tres" type="Animation" id=6]
+[ext_resource path="res://Personajes importados/gochi/animaciones/sorprendida.tres" type="Animation" id=7]
+
+[sub_resource type="BoxShape" id=1]
+
+margin = 0.04
+extents = Vector3( 1.98345, 2.93956, 2.25539 )
+
+[node name="gochi" index="0" instance=ExtResource( 1 )]
+transform = Transform( 0.99998, -0.00630004, 0.000888093, 0.0062995, 0.99998, 0.000609651, -0.00089192, -0.000604038, 0.999999, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="RIG_Gochi" parent="." index="0"]
+editor/display_folded = true
+
+[node name="AnimationTreePlayer" type="AnimationTreePlayer" parent="." index="2"]
+playback_process_mode = 1
+master_player = NodePath("")
+base_path = NodePath("..")
+active = true
+data = {
+"active": true,
+"connections": [ "caminar_o_estatico", "out", 0, "anim 3", "sorprendida_o_asustada", 0, "anim 4", "sorprendida_o_asustada", 1, "Transicion_emosionada", "caminar_o_estatico", 0, "anim 5", "caminar_o_estatico", 1, "anim", "transicion_estatico", 0, "anim 2", "transicion_estatico", 1, "transicion_estatico", "Transicion_emosionada", 0, "sorprendida_o_asustada", "Transicion_emosionada", 1 ],
+"master": NodePath(""),
+"nodes": [ {
+"animation": ExtResource( 3 ),
+"filter": [  ],
+"id": "anim",
+"position": Vector2( 21, 45 ),
+"type": "animation"
+}, {
+"id": "out",
+"position": Vector2( 736, 47 ),
+"type": "output"
+}, {
+"animation": ExtResource( 4 ),
+"filter": [  ],
+"id": "anim 5",
+"position": Vector2( 382, 391 ),
+"type": "animation"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "sorprendida_o_asustada",
+"position": Vector2( 147, 282 ),
+"type": "blend2"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "caminar_o_estatico",
+"position": Vector2( 663, 196 ),
+"type": "blend2"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "transicion_estatico",
+"position": Vector2( 237, 78 ),
+"type": "blend2"
+}, {
+"animation": ExtResource( 5 ),
+"filter": [  ],
+"id": "anim 2",
+"position": Vector2( 24, 148 ),
+"type": "animation"
+}, {
+"animation": ExtResource( 6 ),
+"filter": [  ],
+"id": "anim 3",
+"position": Vector2( 17, 267 ),
+"type": "animation"
+}, {
+"animation": ExtResource( 7 ),
+"filter": [  ],
+"id": "anim 4",
+"position": Vector2( 10, 388 ),
+"type": "animation"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "Transicion_emosionada",
+"position": Vector2( 434, 150 ),
+"type": "blend2"
+} ]
+}
+
+[node name="area_hablar" type="Area" parent="." index="3"]
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="area_hablar" index="0"]
+transform = Transform( 1, 0, 0, 0, 0.872358, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 1 )
+disabled = false
+
+[connection signal="body_entered" from="area_hablar" to="." method="_on_area_hablar_body_entered"]
+[connection signal="body_exited" from="area_hablar" to="." method="_on_area_hablar_body_exited"]
